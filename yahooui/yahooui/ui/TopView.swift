@@ -11,20 +11,64 @@ import SwiftUI
 
 struct TopView: View {
     let gManues = ["すべて","StayHome","ニュース","クーポン","芸能","スポーツ","話題","フォロー","東京五輪"]
+    fileprivate func gMenu() -> some View {
+        return ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 0) {
+                ForEach(0..<9) {
+                    Text(" \(self.gManues[$0])")
+                        .font(.caption)
+                        .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                    Divider()
+                }
+            }
+            .frame(height: 20, alignment: .center)
+            .padding(EdgeInsets(top: 7, leading: 0, bottom: 7, trailing: 0))
+            .background(Color.init(hex: "eee"))
+        }
+        .padding(EdgeInsets(top: 5, leading: 0, bottom: 0, trailing: 0))
+        .background(Color(red: 230/255, green: 230/255, blue: 230/255))
+    }
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
         VStack(spacing: 0) {
-            HStack {
-                Text("Yahoo!検索")
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                    Text("検索")
-                    .foregroundColor(Color.white)
+            HStack(spacing: 0) {
+                HStack(spacing: 0) {
+                    VStack(spacing: 0) {
+                        Text("家で過ごそう")
+                        .foregroundColor(Color.init(hex: "008080"))
+                        .font(.system(size: 8))
+                        Image(systemName:"square.on.square")
+                        .resizable()
+                        .frame(width: 15, height: 15)
+                        .foregroundColor(.red)
+                    }
+                    .padding(EdgeInsets(top: 2,leading: 2, bottom: 0, trailing: 2))
+                    Text("Yahoo!検索")
+                    .foregroundColor(Color.gray)
+                    .font(.system(size: 12))
+                    Spacer()
+                    Image(systemName:"mic.fill" ).foregroundColor(.gray)
+                    Spacer().frame(width:10)
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                        Text("検索")
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 15))
+                        .fontWeight(.bold)
+                    }
+                    .padding(EdgeInsets(top: 6, leading: 10, bottom: 6, trailing: 10))
+                    .background(Color.blue)
                 }
-                .padding()
-                .background(Color.blue)
-                Image(systemName:"mic.fill" ).foregroundColor(.gray)
+                .frame(maxWidth: .infinity)
+                .padding(EdgeInsets(top: 1, leading: 1, bottom: 1, trailing: 1))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 2)
+                        .stroke(Color.blue, lineWidth: 2)
+                )
+                Spacer().frame(width: 10)
                 Image(systemName:"square.on.square" ).foregroundColor(.gray)
             }
+            .padding(EdgeInsets(top: 0, leading: 10, bottom: 5, trailing: 10))
             HStack {
                 Button(action: {}){
                     Text("ログイン")
@@ -163,21 +207,7 @@ struct TopView: View {
                 }
                 Divider()
             }
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 0) {
-                    ForEach(0..<9) {
-                        Text(" \(self.gManues[$0])")
-                        .font(.caption)
-                        .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
-                        Divider()
-                    }
-                }
-                .frame(height: 20, alignment: .center)
-                .padding(EdgeInsets(top: 7, leading: 0, bottom: 7, trailing: 0))
-                .background(Color.init(hex: "eee"))
-            }
-            .padding(EdgeInsets(top: 5, leading: 0, bottom: 0, trailing: 0))
-            .background(Color(red: 230/255, green: 230/255, blue: 230/255))
+            gMenu()
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
         .background(Color.white)

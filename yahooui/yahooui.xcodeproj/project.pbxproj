@@ -16,6 +16,7 @@
 		69C062D3243A2601007E2FD6 /* yahoouiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C062D2243A2601007E2FD6 /* yahoouiTests.swift */; };
 		69C062DE243A2601007E2FD6 /* yahoouiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C062DD243A2601007E2FD6 /* yahoouiUITests.swift */; };
 		69C062ED243A2832007E2FD6 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C062EC243A2832007E2FD6 /* TopView.swift */; };
+		69DE71AD246376EE006E5F2A /* VStack_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE71AC246376EE006E5F2A /* VStack_extension.swift */; };
 		69E122D52455CC0100E089E1 /* Color_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E122D42455CC0100E089E1 /* Color_extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		69C062DD243A2601007E2FD6 /* yahoouiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yahoouiUITests.swift; sourceTree = "<group>"; };
 		69C062DF243A2601007E2FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69C062EC243A2832007E2FD6 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		69DE71AC246376EE006E5F2A /* VStack_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack_extension.swift; sourceTree = "<group>"; };
 		69E122D42455CC0100E089E1 /* Color_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color_extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				69E122D42455CC0100E089E1 /* Color_extension.swift */,
+				69DE71AC246376EE006E5F2A /* VStack_extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				69C062BE243A25FD007E2FD6 /* SceneDelegate.swift in Sources */,
 				69C062ED243A2832007E2FD6 /* TopView.swift in Sources */,
 				69C062C0243A25FD007E2FD6 /* ContentView.swift in Sources */,
+				69DE71AD246376EE006E5F2A /* VStack_extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
