@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		695AB6CB247A74D200A92F94 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695AB6CA247A74D200A92F94 /* PageControl.swift */; };
+		695AB6CD247A753B00A92F94 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695AB6CC247A753B00A92F94 /* PageViewController.swift */; };
+		695AB6CF247A765B00A92F94 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695AB6CE247A765B00A92F94 /* PageView.swift */; };
 		69C062BC243A25FD007E2FD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C062BB243A25FD007E2FD6 /* AppDelegate.swift */; };
 		69C062BE243A25FD007E2FD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C062BD243A25FD007E2FD6 /* SceneDelegate.swift */; };
 		69C062C0243A25FD007E2FD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C062BF243A25FD007E2FD6 /* ContentView.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		695AB6CA247A74D200A92F94 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		695AB6CC247A753B00A92F94 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		695AB6CE247A765B00A92F94 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		69C062B8243A25FD007E2FD6 /* yahooui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yahooui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C062BB243A25FD007E2FD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69C062BD243A25FD007E2FD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		695AB6C9247A748C00A92F94 /* top */ = {
+			isa = PBXGroup;
+			children = (
+				69C062EC243A2832007E2FD6 /* TopView.swift */,
+				695AB6CA247A74D200A92F94 /* PageControl.swift */,
+				695AB6CC247A753B00A92F94 /* PageViewController.swift */,
+				695AB6CE247A765B00A92F94 /* PageView.swift */,
+			);
+			path = top;
+			sourceTree = "<group>";
+		};
 		69C062AF243A25FD007E2FD6 = {
 			isa = PBXGroup;
 			children = (
@@ -147,7 +164,7 @@
 		69C062EB243A27F6007E2FD6 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				69C062EC243A2832007E2FD6 /* TopView.swift */,
+				695AB6C9247A748C00A92F94 /* top */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -293,11 +310,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E122D52455CC0100E089E1 /* Color_extension.swift in Sources */,
+				695AB6CB247A74D200A92F94 /* PageControl.swift in Sources */,
 				69C062BC243A25FD007E2FD6 /* AppDelegate.swift in Sources */,
 				69C062BE243A25FD007E2FD6 /* SceneDelegate.swift in Sources */,
 				69C062ED243A2832007E2FD6 /* TopView.swift in Sources */,
 				69C062C0243A25FD007E2FD6 /* ContentView.swift in Sources */,
 				69DE71AD246376EE006E5F2A /* VStack_extension.swift in Sources */,
+				695AB6CF247A765B00A92F94 /* PageView.swift in Sources */,
+				695AB6CD247A753B00A92F94 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"yahooui/Preview Content\"";
+				DEVELOPMENT_TEAM = 5L7C59W6XV;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = yahooui/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,6 +504,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"yahooui/Preview Content\"";
+				DEVELOPMENT_TEAM = 5L7C59W6XV;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = yahooui/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
